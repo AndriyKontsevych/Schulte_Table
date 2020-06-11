@@ -1,0 +1,130 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.watch {
+  height: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.levels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+}
+
+.timer {
+  height: 50px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to right, #d5e218, #12cc94);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+.square {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.square:hover {
+  background-color: #0037eb67;
+}
+
+.green {
+  background-color: #439600;
+  cursor: not-allowed;
+}
+
+.green:hover {
+  background-color: #439600;
+}
+
+.waiting {
+  display: none;
+}
+
+.reset {
+  height: 50px;
+  width: 150px;
+  border: 1.5px solid #d5e218;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 10px auto;
+  background: #a1b352;
+  cursor: pointer;
+  outline: none;
+}
+
+.reset:hover {
+  transition: all 1s;
+  height: 45px;
+  width: 145px;
+  font-size: 1.8rem;
+  background: #0fa741;
+  border: 5px solid #c4e436;
+  border-radius: 15px;
+}
+
+.gameBtn {
+  position: absolute;
+  height: 150px;
+  width: 230px;
+  background: #9c9a06;
+  margin: 180px auto;
+  font-size: 2.5rem;
+  border: 2px solid #0fa741;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.8;
+}
+
+.gameBtn:hover {
+  margin: 175px auto;
+  background: #0fa741;
+  border: 5px solid #9c9a06;
+  opacity: 1;
+}
+
+.extraTime {
+  font-size: 1.3rem;
+  color: #1a5c18;
+}
